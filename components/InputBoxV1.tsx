@@ -6,7 +6,7 @@ type InputProps = {
     onPress: any
     secureTextEntry?: boolean
 }
-export default function InputBox1(props: InputProps){
+export default function InputBoxV1(props: InputProps){
     const styles = StyleSheet.create({
         inputView:{
             borderWidth: 1,

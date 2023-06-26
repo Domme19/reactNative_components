@@ -1,5 +1,5 @@
 import {View, Text, StyleSheet, TouchableOpacity, ActivityIndicator} from "react-native";
-import InputBox1 from "../components/InputBoxv1";
+import InputBoxV1 from "../components/InputBoxV1";
 import {useState} from "react";
 
 
@@ -19,12 +19,12 @@ export default function LoginScreenV2(){
         <View style={styles.container}>
             <View style={styles.mainView}>
                 <Text style={{marginBottom: 10, textAlign: 'center', fontSize: 18, fontWeight: 'bold'}}>Sign in</Text>
-                <InputBox1
+                <InputBoxV1
                     placeHolderText={"Email Address"}
                     borderColor={"lightblue"}
                     onPress={setEmail}
                 />
-                <InputBox1
+                <InputBoxV1
                     placeHolderText={"Password"}
                     borderColor={"lightblue"}
                     onPress={setPassword}
@@ -46,6 +46,13 @@ export default function LoginScreenV2(){
                 <TouchableOpacity style={styles.forgotBtn}>
                     <Text style={{color: 'black', fontSize: 16, fontWeight: 'bold'}}>Forgot Password?</Text>
                 </TouchableOpacity>
+
+                <View style={{flexDirection:'row', alignItems: 'center'}}>
+                    <View style={{borderWidth: 0.5, flex: 1}}></View>
+                    <Text style={{marginRight: 10, marginLeft: 10}}>Or</Text>
+                    <View style={{borderWidth: 0.5, flex: 1}}></View>
+                </View>
+
             </View>
             <View style={styles.bottomView}>
                 <TouchableOpacity style={{marginBottom: 20, justifyContent: 'center', alignItems: 'center'}}>
@@ -74,7 +81,6 @@ const styles = StyleSheet.create({
     },
 
     mainBtn:{
-        // backgroundColor: 'black',
         height: 50,
         justifyContent: 'center',
         alignItems: 'center',
@@ -84,7 +90,8 @@ const styles = StyleSheet.create({
 
     forgotBtn:{
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        marginBottom: 20
     },
 
 })
