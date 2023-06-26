@@ -12,6 +12,12 @@ export default function HomeScreen (){
                     Navigate to Login
                 </Text>
             </TouchableOpacity>
+
+            <TouchableOpacity style={styles.navigateBtn} onPress={() => navigation.navigate("Login2" as never)}>
+                <Text style={{textAlign: 'center', color: 'white', fontSize: 16}}>
+                    Navigate to Login 2
+                </Text>
+            </TouchableOpacity>
         </View>
     )
 }
@@ -29,6 +35,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 10,
         paddingVertical: 15,
         width: '60%',
-        borderRadius: 10
+        borderRadius: 10,
+        marginBottom: 20
     }
 })
