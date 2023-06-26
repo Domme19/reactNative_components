@@ -1,7 +1,6 @@
 import {ColorSchemeName} from "react-native";
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
 import {DarkTheme, DefaultTheme, NavigationContainer} from "@react-navigation/native";
-
 import HomeScreen from "../screens/HomeScreen";
 
 
@@ -14,7 +13,6 @@ export default function Index({colorScheme}: { colorScheme: ColorSchemeName }){
             <Stack.Navigator>
                 <Stack.Screen name="HomeScreen" component={HomeScreen} options={{headerShown: false}}/>
             </Stack.Navigator>
-
         </NavigationContainer>
     )
 
