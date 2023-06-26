@@ -2,7 +2,7 @@ import {View, Text, StyleSheet} from "react-native";
 export default function HomeScreen (){
     return(
         <View style={styles.container}>
-            <Text>
+            <Text style={{fontSize: 20}}>
                 Home screen
             </Text>
         </View>
@@ -12,6 +12,8 @@ export default function HomeScreen (){
 const styles = StyleSheet.create({
     container:{
         flex: 1,
-        backgroundColor:'lightblue'
+        backgroundColor:'lightblue',
+        paddingTop: 40,
+        paddingLeft: 20
     }
 })
